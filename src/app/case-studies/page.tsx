@@ -23,7 +23,7 @@ export default function CaseStudiesPage() {
         <div className="section-shell grid gap-4 md:grid-cols-2">
           {projects.map((project) => (
             <article key={project.title} className="rounded-[8px] border border-white/10 bg-white/[0.04] p-7">
-              <p className="text-sm uppercase tracking-[0.2em] text-acid">{project.category}</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-primary">{project.category}</p>
               <h2 className="mt-5 font-display text-4xl font-black">{project.title}</h2>
               <p className="mt-5 leading-8 text-white/62">{project.summary}</p>
               <dl className="mt-8 grid grid-cols-3 gap-3 text-sm">

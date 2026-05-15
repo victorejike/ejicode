@@ -89,21 +89,21 @@ export const projects = [
     category: "Enterprise SaaS",
     year: "2026",
     summary: "A command center for distributed operations, live forecasting, and executive decision velocity.",
-    color: "from-acid/50 via-white/10 to-transparent"
+    color: "from-primary/50 via-white/10 to-transparent"
   },
   {
     title: "Atlas Pay",
     category: "Fintech Infrastructure",
     year: "2025",
     summary: "A resilient payments portal with identity, reconciliation, risk visibility, and global reporting.",
-    color: "from-cyan-300/45 via-acid/20 to-transparent"
+    color: "from-cyan-300/45 via-primary/20 to-transparent"
   },
   {
     title: "Signal Grid",
     category: "AI Analytics",
     year: "2025",
     summary: "An AI intelligence layer for noisy enterprise data, built around trust, lineage, and speed.",
-    color: "from-fuchsia-300/35 via-acid/15 to-transparent"
+    color: "from-fuchsia-300/35 via-primary/15 to-transparent"
   },
   {
     title: "Pulse Cloud",

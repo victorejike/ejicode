@@ -16,13 +16,14 @@ export function Navbar() {
   const y = useTransform(scrollY, [0, 120], [0, -4]);
 
   return (
-    <motion.header
-      style={{ background, y }}
-      className="fixed left-1/2 top-4 z-50 w-[min(calc(100%-1rem),1480px)] -translate-x-1/2 rounded-full border border-white/10 px-3 py-2 shadow-2xl shadow-black/30 backdrop-blur-2xl"
-    >
+    <div className="fixed inset-x-0 top-4 z-50 flex justify-center px-3">
+      <motion.header
+        style={{ background, y }}
+        className="w-full max-w-[1480px] rounded-full border border-white/10 px-3 py-2 shadow-2xl shadow-black/30 backdrop-blur-2xl"
+      >
       <nav className="flex items-center justify-between gap-4" aria-label="Main navigation">
         <Link href="/" className="group flex items-center gap-3 px-2" aria-label="EJICODE home">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-acid text-sm font-black text-carbon shadow-glow transition-transform group-hover:rotate-12">
+          <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-sm font-black text-carbon shadow-primaryGlow transition-transform group-hover:rotate-12">
             EJ
           </span>
           <span className="font-display text-sm font-bold tracking-[0.22em]">EJICODE</span>
@@ -85,6 +86,7 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+      </motion.header>
+    </div>
   );
 }

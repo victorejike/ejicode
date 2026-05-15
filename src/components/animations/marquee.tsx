@@ -5,7 +5,7 @@ export function Marquee({ items }: { items: string[] }) {
         {[...items, ...items].map((item, index) => (
           <span key={`${item}-${index}`} className="font-display text-2xl font-bold text-white/80 md:text-4xl">
             {item}
-            <span className="mx-8 text-acid">/</span>
+            <span className="mx-8 text-primary">/</span>
           </span>
         ))}
       </div>

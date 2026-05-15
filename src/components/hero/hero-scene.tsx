@@ -17,13 +17,15 @@ export function HeroScene() {
     host.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
+    const primaryValue = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim();
+    const primaryColor = primaryValue ? `hsl(${primaryValue})` : "hsl(142 100% 50%)";
     const camera = new THREE.PerspectiveCamera(45, host.clientWidth / host.clientHeight, 0.1, 100);
     camera.position.set(0, 0, 5.5);
 
     const ambient = new THREE.AmbientLight("#ffffff", 0.7);
     const key = new THREE.DirectionalLight("#ffffff", 2.2);
     key.position.set(3, 2, 5);
-    const accent = new THREE.PointLight("#00ff66", 5, 12);
+    const accent = new THREE.PointLight(primaryColor, 5, 12);
     accent.position.set(-3, -2, 3);
     scene.add(ambient, key, accent);
 
@@ -56,7 +58,7 @@ export function HeroScene() {
     const particles = new THREE.Points(
       particleGeometry,
       new THREE.PointsMaterial({
-        color: "#00ff66",
+        color: primaryColor,
         size: 0.018,
         transparent: true,
         opacity: 0.55,

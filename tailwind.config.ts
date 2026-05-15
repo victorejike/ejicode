@@ -8,7 +8,7 @@ const config: Config = {
         carbon: "#050505",
         ink: "#0A0A0A",
         panel: "#111111",
-        acid: "#00FF66",
+        primary: "hsl(var(--primary))",
         mist: "#D8FFE8",
         muted: "#999999"
       },
@@ -19,10 +19,10 @@ const config: Config = {
       },
       backgroundImage: {
         "radial-grid":
-          "radial-gradient(circle at 20% 10%, rgba(0,255,102,.22), transparent 22rem), radial-gradient(circle at 80% 30%, rgba(255,255,255,.12), transparent 18rem)"
+          "radial-gradient(circle at 20% 10%, hsl(var(--primary) / .22), transparent 22rem), radial-gradient(circle at 80% 30%, rgba(255,255,255,.12), transparent 18rem)"
       },
       boxShadow: {
-        glow: "0 0 80px rgba(0, 255, 102, .18)"
+        primaryGlow: "0 0 80px hsl(var(--primary) / .18)"
       }
     }
   },

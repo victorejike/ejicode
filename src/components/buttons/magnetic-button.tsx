@@ -28,8 +28,8 @@ export function MagneticButton({ href, children, variant = "primary" }: Magnetic
 
   const classes =
     variant === "primary"
-      ? "bg-acid text-carbon hover:bg-white"
-      : "border border-white/15 bg-white/5 text-white hover:border-acid/60 hover:bg-acid/10";
+      ? "bg-primary text-carbon hover:bg-white"
+      : "border border-white/15 bg-white/5 text-white hover:border-primary/60 hover:bg-primary/10";
 
   return (
     <Link

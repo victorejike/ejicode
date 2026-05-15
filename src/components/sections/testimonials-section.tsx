@@ -17,7 +17,7 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.7 }}
-              className="rounded-[8px] border border-white/10 bg-white/[0.04] p-6 md:p-8"
+              className="depth-card relative rounded-[8px] border border-white/10 bg-white/[0.04] p-6 md:p-8"
             >
               <p className="min-h-48 font-display text-3xl font-bold leading-tight">“{item.quote}”</p>
               <div className="mt-10 border-t border-white/10 pt-5">

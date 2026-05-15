@@ -17,7 +17,7 @@ export function Footer() {
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-white/40">Sitemap</h2>
             <div className="grid gap-3 text-white/70">
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-acid">
+                <Link key={item.href} href={item.href} className="transition hover:text-primary">
                   {item.label}
                 </Link>
               ))}
@@ -26,10 +26,10 @@ export function Footer() {
           <div>
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-white/40">Connect</h2>
             <div className="grid gap-3 text-white/70">
-              <a className="transition hover:text-acid" href={`mailto:${site.email}`}>
+              <a className="transition hover:text-primary" href={`mailto:${site.email}`}>
                 {site.email}
               </a>
-              <a className="transition hover:text-acid" href={`tel:${site.phone.replace(/\D/g, "")}`}>
+              <a className="transition hover:text-primary" href={`tel:${site.phone.replace(/\D/g, "")}`}>
                 {site.phone}
               </a>
               {site.socials.map((item) => (

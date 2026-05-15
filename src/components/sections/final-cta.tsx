@@ -2,10 +2,10 @@ import { MagneticButton } from "@/components/buttons/magnetic-button";
 
 export function FinalCta() {
   return (
-    <section className="relative overflow-hidden py-24 md:py-36">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(0,255,102,.25),transparent_30rem)]" />
+    <section className="depth-stage relative overflow-hidden py-24 md:py-36">
+      <div className="primary-orbit absolute inset-0 -z-10 opacity-90" />
       <div className="section-shell text-center">
-        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.24em] text-acid">Start the signal</p>
+        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.24em] text-primary">Start the signal</p>
         <h2 className="mx-auto max-w-6xl font-display text-[clamp(3.5rem,10vw,11rem)] font-black leading-[0.86]">
           Let’s engineer your unfair advantage.
         </h2>

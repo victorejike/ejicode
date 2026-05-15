@@ -17,7 +17,7 @@ export function ProcessSection() {
               className="group grid gap-5 border-t border-white/10 py-8 md:grid-cols-[.35fr_.65fr] md:items-center"
             >
               <div className="flex items-center gap-5">
-                <span className="font-display text-5xl font-black text-acid/80">0{index + 1}</span>
+                <span className="font-display text-5xl font-black text-primary/80">0{index + 1}</span>
                 <h3 className="font-display text-4xl font-bold">{step.title}</h3>
               </div>
               <p className="max-w-3xl text-xl leading-8 text-white/62 transition-colors group-hover:text-white/82">{step.text}</p>

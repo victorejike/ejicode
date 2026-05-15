@@ -23,10 +23,10 @@ export default function ContactPage() {
           <div className="rounded-[8px] border border-white/10 bg-white/[0.04] p-7">
             <h2 className="font-display text-4xl font-bold">Direct line</h2>
             <div className="mt-8 grid gap-4 text-white/70">
-              <a className="flex items-center gap-3 transition hover:text-acid" href={`mailto:${site.email}`}>
+              <a className="flex items-center gap-3 transition hover:text-primary" href={`mailto:${site.email}`}>
                 <Mail className="h-5 w-5" /> {site.email}
               </a>
-              <a className="flex items-center gap-3 transition hover:text-acid" href={`tel:${site.phone.replace(/\D/g, "")}`}>
+              <a className="flex items-center gap-3 transition hover:text-primary" href={`tel:${site.phone.replace(/\D/g, "")}`}>
                 <Phone className="h-5 w-5" /> {site.phone}
               </a>
             </div>
@@ -35,14 +35,14 @@ export default function ContactPage() {
             {["Name", "Email", "Company", "Project budget"].map((label) => (
               <label key={label} className="grid gap-2 text-sm text-white/55">
                 {label}
-                <input className="rounded-[8px] border border-white/10 bg-carbon px-4 py-4 text-white outline-none transition focus:border-acid" />
+                <input className="rounded-[8px] border border-white/10 bg-carbon px-4 py-4 text-white outline-none transition focus:border-primary" />
               </label>
             ))}
             <label className="grid gap-2 text-sm text-white/55">
               What should we build?
-              <textarea className="min-h-40 rounded-[8px] border border-white/10 bg-carbon px-4 py-4 text-white outline-none transition focus:border-acid" />
+              <textarea className="min-h-40 rounded-[8px] border border-white/10 bg-carbon px-4 py-4 text-white outline-none transition focus:border-primary" />
             </label>
-            <button className="rounded-full bg-acid px-6 py-4 font-semibold text-carbon transition hover:bg-white" type="submit">
+            <button className="rounded-full bg-primary px-6 py-4 font-semibold text-carbon transition hover:bg-white" type="submit">
               Send project signal
             </button>
           </form>
