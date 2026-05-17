@@ -1,21 +1,25 @@
 ﻿// pages/AboutPage.jsx
 
 import { Link } from 'react-router-dom'
-import IMG_TEAM_STORY from '../assets/images/img2.jpg'
+import IMG_TEAM_STORY from '../assets/images/ejike.jpeg'
+import backend_img from  '../assets/images/david.jpeg'
+import frontend_eng from  '../assets/images/ai-eng.jpg'
+import IMG_APEX  from '../assets/images/psalmy-dave.png'
+import IMG_VERA   from '../assets/images/work-track.png'
+
 
 // ─── Online images ───
 
 const IMG_TEAM_COLLAB = 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1400&q=85'
-const IMG_APEX        = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80'
 const IMG_MIRA        = 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80'
 const IMG_ORION       = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80'
-const IMG_VERA        = 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=900&q=80'
+
 
 const projects = [
-  { title: 'Apex Banking Platform', img: IMG_APEX, chip: 'Web Application' },
+  { title: 'PsalmsyDave Gadget Store', img: IMG_APEX, chip: 'Web Application' },
   { title: 'Mira Health App',       img: IMG_MIRA, chip: 'Mobile' },
   { title: 'Orion Cloud Suite',     img: IMG_ORION, chip: 'Cloud & Infrastructure' },
-  { title: 'Vera e-Commerce',       img: IMG_VERA, chip: 'Web + Design System' },
+  { title: 'Work Track Software Management System',       img: IMG_VERA, chip: 'Web + Design System' },
 ]
 
 const values = [
@@ -86,6 +90,44 @@ function AboutPage() {
           </div>
         </div>
       </section>
+      {/* ─── TEAM ─── */}
+<section className="section" style={{ background: 'var(--creamDk)', paddingTop: 0 }}>
+  <div className="section-inner">
+    <h2
+      className="reveal"
+      style={{
+        fontFamily: 'var(--font-serif)', fontWeight: 300,
+        fontSize: 'clamp(1.8rem,3vw,2.5rem)', letterSpacing: '-.02em', marginBottom: 60,
+        textAlign: 'center',
+      }}
+    >
+      The people behind it
+    </h2>
+    <div className="team-circles-grid">
+      <div className="team-circle-card reveal">
+        <div className="team-circle-img-wrap">
+          <img src={IMG_TEAM_STORY} alt="Head of Frontend Engineering" />
+        </div>
+        <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: '1.1rem', marginTop: 20, marginBottom: 6 }}>Victor Ejike</h3>
+        <p style={{ color: 'var(--muted)', fontSize: '.82rem', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500 }}>Project Lead</p>
+      </div>
+      <div className="team-circle-card reveal" style={{ transitionDelay: '0.15s' }}>
+        <div className="team-circle-img-wrap">
+          <img src={backend_img} alt="Head of Backend Engineering" />
+        </div>
+        <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: '1.1rem', marginTop: 20, marginBottom: 6 }}>Abah David</h3>
+        <p style={{ color: 'var(--muted)', fontSize: '.82rem', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500 }}>Head of Backend</p>
+      </div>
+      <div className="team-circle-card reveal">
+        <div className="team-circle-img-wrap">
+          <img src={frontend_eng} alt="Head of Frontend Engineering" />
+        </div>
+        <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: '1.1rem', marginTop: 20, marginBottom: 6 }}>Stanley Baba</h3>
+        <p style={{ color: 'var(--muted)', fontSize: '.82rem', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500 }}>Head of Frontend</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ─── VALUES ─── */}
       <section className="section" style={{ background: 'var(--creamDk)', paddingTop: 0 }}>

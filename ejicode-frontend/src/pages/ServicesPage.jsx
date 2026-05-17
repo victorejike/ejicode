@@ -2,13 +2,15 @@
 
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import IMG_MOBILE from '../assets/images/mobile.png'
+import IMG_WEB from '../assets/images/web.png'
+import IMG_CLOUD  from '../assets/images/cloud.jpg'
+import IMG_DESIGN  from '../assets/images/design.png'
 
 // ─── Online images per service (Unsplash) ───
-const IMG_WEB     = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80'
-const IMG_MOBILE  = 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=80'
-const IMG_CLOUD   = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80'
+
+
 const IMG_AI      = 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&q=80'
-const IMG_DESIGN  = 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900&q=80'
 const IMG_UX      = 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=900&q=80'
 
 const services = [
